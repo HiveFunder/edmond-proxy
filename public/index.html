@@ -33,28 +33,7 @@
 
     <!-- HEADER PICTURE AND FUNDING -->
     <header class="projectBanner">
-
-      <div class="fundingHeader">
-        <div class="followContainer">
-          <img src="/images/jordan-head.png">
-          <div>By Jordan Holmes</div>
-          <div class="followBtn">Follow Creator</div>
-        </div>
-        <div class="titleContainer">
-          <div class="title">Monumental</div>
-          <div class="subTitle">Monument is the next generation civilization game with a mix of innovative mechanics taking the best from deckbuilding and 4X games.</div>
-        </div>
-      </div>
-
-      <section class="funding">
-        <div><img src="https://picsum.photos/850/480"></div>
-        <div id='funding-widget'></div>
-      </section>
-      <div class="badgesContainer">
-        <span>Kickstand logo</span>
-        <span>Table Top games</span>
-        <span>location</span>
-      </div>
+      <div id='funding-widget'></div>
     </header>
     <nav class="secondaryNavBar">
       <div></div>
@@ -70,10 +49,12 @@
       <div id='Updates'></div>
     </div>
     <div id='comments'></div>
-    <script src="http://localhost:3001/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/bundle.js"></script>
-    <script src="http://localhost:3004/bundle.js"></script>
+    
+    <!-- TODO: Replace these URLs with the corresponding Amazon EC2/S3 links -->
+    <script src="http://localhost:3001/bundle.js" async></script>
+    <script src="http://localhost:3002/bundle.js" async></script>
+    <script src="http://localhost:3003/bundle.js" async></script>
+    <script src="http://localhost:8080/bundle.js" async></script>
   </div>
   </body>
 
