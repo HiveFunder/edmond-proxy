@@ -24,3 +24,5 @@ coverage
 build/
 dist/
 
+newrelic.js
+newrelic_agent.log
