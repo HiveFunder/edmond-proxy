@@ -1,11 +1,10 @@
 // Place all static HTML here, and dynamic HTML via parameters.
-module.exports = (funding, rewards, updates, comments, scripts) => `
-  <!DOCTYPE html>
+module.exports = (funding, rewards, updates, comments, scripts) => `<!DOCTYPE html>
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
       <title>HiveFunder</title>
-      <link href="styles.css" rel="stylesheet" type="text/css" />
+      <link href="/styles.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500" rel="stylesheet" />
     </head>
     <body>
@@ -22,9 +21,9 @@ module.exports = (funding, rewards, updates, comments, scripts) => `
             <img class="userImg" src="/images/user-circle.png">
           </div>
         </nav>
-        
+
         <header class="projectBanner">
-          ${funding}
+          <div id='funding-widget'>${funding}</div>
         </header>
         <nav class="secondaryNavBar">
           <div></div>
@@ -34,7 +33,7 @@ module.exports = (funding, rewards, updates, comments, scripts) => `
             <span class="navText">Comments</span>
           </div>
         </nav>
-        
+
         <div class="rewardsAndUpdates">
           ${rewards}
           ${updates}
