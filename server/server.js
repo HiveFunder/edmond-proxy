@@ -13,29 +13,30 @@ const app = express();
 
 // Bundle info
 bundleNames = ['funding'];
-bundleUrls = ['https://s3-us-west-1.amazonaws.com/hivefunder-funding/funding/bundle.js'];
+bundleUrls = ['https://s3-us-west-1.amazonaws.com/hivefunder-funding/funding/bundle.server.js'];
+bundles = undefined;
 
 // Serve app.css
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 // Acquire the service bundles
-const services = Loader.load(bundleNames, bundleUrls);
+Loader.load(bundleNames, bundleUrls).then(result => { bundles = result; });
 
 const renderComponents = (components, props = {}) => {
   return Object.keys(components).map(item => {
     let component = React.createElement(components[item], props);
-    return ReactDom.renderToString(component);
+    return ReactDOM.renderToString(component);
   });
 };
 
 app.get('/:id', (req, res) => {
-  let components = renderComponents(services, {itemid: req.params.id});
+  let components = renderComponents(bundles, {itemid: req.params.id});
   res.end(Layout(
     components[0], // Maybe use spread?
     '',
     '',
     '',
-    Scripts(Object.keys(services))
+    Scripts(bundleNames)
   ));
 });
 

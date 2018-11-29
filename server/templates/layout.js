@@ -3,10 +3,10 @@ module.exports = (funding, rewards, updates, comments, scripts) => `
   <!DOCTYPE html>
   <html lang="en">
     <head>
-      <meta charset="UTF-8">
+      <meta charset="UTF-8" />
       <title>HiveFunder</title>
-      <link href="styles.css" rel="stylesheet" type="text/css"/>
-      <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500" rel="stylesheet" />
     </head>
     <body>
       <div class="global">
@@ -41,7 +41,7 @@ module.exports = (funding, rewards, updates, comments, scripts) => `
         </div>
         ${comments}
       </div>
+      ${scripts}
     </body>
-    ${scripts}
   </html>
 `;
