@@ -35,7 +35,7 @@ module.exports = (funding, rewards, updates, comments, scripts) => `<!DOCTYPE ht
         </nav>
 
         <div class="rewardsAndUpdates">
-          ${rewards}
+          <div id="rewards">${rewards}</div>
           ${updates}
         </div>
         ${comments}
