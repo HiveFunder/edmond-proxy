@@ -4,4 +4,6 @@ module.exports = (items) => `
 
   <script src="https://s3-us-west-1.amazonaws.com/hivefunder-funding/funding/bundle.js" async></script>
   <script src="http://54.191.39.74:3000/public/bundle.js" async></script>
+  <script src="https://s3-us-west-1.amazonaws.com/sdc-updates-bundle/updates.bundle.js" async></script>
+  <script src="https://s3-us-west-1.amazonaws.com/hivefund-comments/bundle.js" async></script>
 `;
