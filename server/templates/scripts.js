@@ -1,0 +1,9 @@
+module.exports = (items) => `
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+  <script src="https://s3-us-west-1.amazonaws.com/hivefunder-funding/funding/bundle.js" async></script>
+  <script src="http://54.191.39.74:3000/public/bundle.js" async></script>
+  <script src="https://s3-us-west-1.amazonaws.com/sdc-updates-bundle/updates.bundle.js" async></script>
+  <script src="https://s3-us-west-1.amazonaws.com/hivefund-comments/bundle.js" async></script>
+`;

@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html>
-
   <head>
 	<meta charset="UTF-8">
-  <title>Kickstand</title>
-  <script src="/lib/react.development.js"></script>
-  <script src="/lib/react-dom.development.js"></script>
+    <title>Kickstand</title>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:300|Barlow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500" rel="stylesheet">
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
   </head>
   <body>
   <div class="global">
@@ -23,7 +15,7 @@
         <span class="navText">Explore</span>
         <span class="navText startProjectBtn">Start a project</span>
       </div>
-      <img class="logoImg" src="https://d3mlfyygrfdi2i.cloudfront.net/kickstarter-logo-color.png">
+
       <div class='searchContainer'>
         <div class="navText">Search</div>
         <img class="magnifyingGlassImg" src="/images/magnifying-glass.png">
@@ -51,10 +43,8 @@
     <div id='comments'></div>
     
     <!-- TODO: Replace these URLs with the corresponding Amazon EC2/S3 links -->
-    <script src="http://localhost:3001/bundle.js" async></script>
-    <script src="http://localhost:3002/bundle.js" async></script>
-    <script src="http://localhost:3003/bundle.js" async></script>
-    <script src="http://localhost:8080/bundle.js" async></script>
+    <script src="https://s3-us-west-1.amazonaws.com/hivefunder-funding/funding/bundle.js" async></script>
+
   </div>
   </body>
 
